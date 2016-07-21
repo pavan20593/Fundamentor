@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Fundamentor</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.5.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" /> 
+	<link rel="stylesheet" href="css/signup_style.css" type="text/css" />
+</head>
+
+
+<body class="parentSignupBody parentInside">
+
+	<header class="navbar navbar-fixed-top mainNav">
+		<div class="container customContainer">
+			<div class="navbar-header clearfix">				
+
+				<button class="navbar-toggle toggleButton" data-target="#navbar-collapse-1" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bars"></span>
+				</button>
+
+				<a class="navbar-brand navbarBrandCustom" href="/">
+					<span class="brandLogo">Fundamentor</span>
+				</a>
+
+				<div class="customNavMobile">
+					<a data-target="#modalLogin" data-toggle="modal" href="#">
+						LOG IN
+					</a>
+				</div>
+			</div>
+			<nav class="collapse navbar-collapse" id="navbar-collapse-1" role="navigation">
+				<ul class="nav navbar-nav navbar-right customNavMainList">
+					<li>
+						<a href="index.html">HOME</a>
+					</li>
+					
+					<li>
+						<a href="#faq">FAQ</a>
+					</li>
+
+					<li>
+						<a href="#pricing">PRICING AND PLANS</a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="drop3" role="button">SIGN UP FOR FREE</a>
+						<ul aria-labelledby="drop3" class="dropdown-menu" role="menu">
+							<li>
+								<a href="/users/sign_up?role=parent">AS A PARENT</a>
+							</li>
+							<li>
+								<a href="/users/sign_up?role=student">AS A STUDENT</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="customNavHide">
+						<a data-target="#modalLogin" data-toggle="modal" href="#">LOG IN</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="container customCOntainer">
+		<div class="row">
+			<div class="col-sm-9 col-sm-offset-2 parentSignupWrap">
+				<div class="wrapHeading" id="text">
+					PREPARE YOUR CHILD FOR THE FUTURE
+					<br>
+					Try our aptitude development program for free.
+					<a class="btn btn-primary" href="/welcomes/product-tour">Take a product Tour</a>
+				</div>
+				<div class="parentSignupForm">
+					<div class="socialLoginWrap">
+						<a href="/auth/facebook" id="underline">
+							<img alt="Parent signup 06" height="33" src="./images/parent-signup-06.png" width="170">
+						</a>
+						<a href="/auth/google_oauth2" id="underline">
+							<img alt="Parent signup 05" height="33" src="./images/parent-signup-05.png" width="170">
+						</a>
+					</div>
+					<h4>
+						<center>
+							OR
+						</center>
+					</h4>
+					<form accept-charset="UTF-8" action="" class="simpleForm newUser" id="newUser" method="post">
+
+						<div style="display:none">
+							<input name="utf8" id="utf8" type="hidden" value="✓">
+							<input name="authenticityToken" id="authenticityToken" type="hidden" value="cthJgGLhEUJdaVc+k37q8pGxrAK0fj1Rs2fAE/3xMGw=">
+						</div>
+
+						<div class="form-group hidden userRole">
+							<input class="hidden form-control" id="userRole" name="userRole" type="hidden" value="parent">
+						</div>
+
+						<div class="form-group email required userEmail">
+							<label class="email required control-label" for="user_email">
+								<abbr title="required">*</abbr> 
+								<text>Parent Email ID </text>
+								<span>(login as a parent using email id)</span>
+							</label>
+							<input aria-required="true" class="string email required form-control" id="userEmail" name="userEmail" required="required" type="email" value="">
+						</div>
+
+						<div class="form-group hidden userChildrensRole">
+							<input class="hidden form-control" id="userChildrensAttributes_0_role" name="userChildrensAttributes_0_role" type="hidden" value="student">
+						</div>
+
+						<div class="form-group string required userChildrensUserId">
+							<label class="string required control-label" for="user_childrens_attributes_0_user_id">
+								<abbr title="required">*</abbr> 
+								<text>Child Username </text>
+								<span>(login as a child with this username)</span>
+							</label>
+							<input aria-required="true" class="string required form-control" id="userChildrensAttributes_0_userId" name="userChildrensAttributes_0_userId" required="required" type="text">
+						</div>
+
+						<div class="selectWrap">
+							<div class="form-group select required userChildrensProductNumber">
+								<label class="select required control-label" for="user_childrens_attributes_0_product_number">
+									<abbr title="required">*</abbr> Class/ Grade
+								</label>
+
+								<div class="gradeSelectWrap">
+									<select aria-required="true" class="select required form-control" id="userChildrensAttributes_0_productNumber" name="userChildrensAttributes_0_productNumber" required="required">
+										<option value="">Class/ Grade</option>
+										<option value="3999">Class 3</option>
+										<option value="4999">Class 4</option>
+										<option value="5999">Class 5</option>
+										<option value="6999">Class 6</option>
+										<option value="7999">Class 7</option>
+										<option value="8999">Class 8</option>
+										<option value="9999">Class 9</option>
+									</select>
+								</div>
+								<span class="icon-caret-down"></span>
+							</div>
+						</div>
+							<div class="form-group password required user_password"><label class="password required control-label" for="user_password"><abbr title="required">*</abbr> <text>Password </text><span>(min 6 characters)</span></label><input aria-required="true" class="password required form-control" id="user_password" name="user[password]" required="required" type="password"></div>
+							<div class="form-group password required user_password_confirmation"><label class="password required control-label" for="user_password_confirmation"><abbr title="required">*</abbr> <text>Confirm Password </text><span>(same as above)</span></label><input aria-required="true" class="password required form-control" id="user_password_confirmation" name="user[password_confirmation]" required="required" type="password"></div>
+							<div class="securityCheckWrap">
+								<p>
+									Enter the word/number below.
+								</p>
+								<!--<script type="text/javascript">
+									var RecaptchaOptions = {"theme": "white"};
+								</script>
+								<script type="text/javascript" src="//www.google.com/recaptcha/api/challenge?k=6LePQQkTAAAAALQykrmLLZU9-BQ1l5NWvA5Y3DNe&amp;lang="></script><script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha.js"></script><div id="recaptcha_widget_div" class=" recaptcha_nothad_incorrect_sol recaptcha_isnot_showing_audio"><div id="recaptcha_area"><table id="recaptcha_table" class="recaptchatable recaptcha_theme_white"> <tbody><tr> <td colspan="6" class="recaptcha_r1_c1"></td> </tr> <tr> <td class="recaptcha_r2_c1"></td> <td colspan="4" class="recaptcha_image_cell"><center><div id="recaptcha_image" style="width: 300px; height: 57px;"><img id="recaptcha_challenge_image" alt="reCAPTCHA challenge image" height="57" width="300" src="http://www.google.com/recaptcha/api/image?c=03AHJ_Vuu0Mkc9TMa2JhaYFeXEx7bvYngEIlS6ktwEe_j6-W3CZR-CL__tn35ziHkdAZ6KAWHUWG-dA53bK-FHB5YlqvwUZSCNjJTTw563LyjzI_wVbRFkvvLIAefJrDdk-mRGUkhYZdwYFUDf7rB0tBFjVhZ-YWvUDfse7i8ybYp0jWUV9hB2EY9JgBwFBVAuxe6JvpGK8kN_nGChovuV3janN3ry6JPMbPJ1GAIlM4C56Hfy0clvU1hmPUFaRIoiO5iSiok_arGt_pwjzwDsVsQYgU09a4jSzZWnVdki06DzrUTNHF2Srv0&amp;th=,BfSwOEFjTBCGzAa2IbLiYfdPX6XwAAAAnKAAAAAE-ABqGpHYJgdRw4hqzClcqm11IAma68qnLV_QIl1CGS0pGbmVDf1teDdgAdQp_Qmn0buU89HSt_mTqpNNBL--9VZpybunymf9QuTHXnHlj-2e5RsLpanMM9gSGJogtYOs7RzvwIcltZfXm-ccfmsAuWWBrHQ2JrNEB7Dk_Qs_Dl1kH9R4L9bfSaKWQzSbYl6saNhpekq90kRp2VyPCS266R0-Yvie-ykuGNrhGK21bfFWncAbUMAQsagQ0MDblH7UW7o1VVZ7LuPxDMoAgIVAuJXXptekl0hy0uGGImnGT7B0dkZAKKFXSOzNtjBTpSMy2cW4bZuqTwKm08iCvtW2CfW0fK7rRKiyByJhbNjwjHb3hmiJ352Egesc63ty8UtYhkMZnIVhSfjL"></div></center></td> <td class="recaptcha_r2_c2"></td> </tr> <tr> <td rowspan="6" class="recaptcha_r3_c1"></td> <td colspan="4" class="recaptcha_r3_c2"></td> <td rowspan="6" class="recaptcha_r3_c3"></td> </tr> <tr> <td rowspan="3" class="recaptcha_r4_c1" height="49"> <div class="recaptcha_input_area"> <span id="recaptcha_challenge_field_holder" style="display: none;"><input type="hidden" name="recaptcha_challenge_field" id="recaptcha_challenge_field" value="03AHJ_Vuu0Mkc9TMa2JhaYFeXEx7bvYngEIlS6ktwEe_j6-W3CZR-CL__tn35ziHkdAZ6KAWHUWG-dA53bK-FHB5YlqvwUZSCNjJTTw563LyjzI_wVbRFkvvLIAefJrDdk-mRGUkhYZdwYFUDf7rB0tBFjVhZ-YWvUDfse7i8ybYp0jWUV9hB2EY9JgBwFBVAuxe6JvpGK8kN_nGChovuV3janN3ry6JPMbPJ1GAIlM4C56Hfy0clvU1hmPUFaRIoiO5iSiok_arGt_pwjzwDsVsQYgU09a4jSzZWnVdki06DzrUTNHF2Srv0"></span><input name="recaptcha_response_field" id="recaptcha_response_field" type="text" autocorrect="off" autocapitalize="off" placeholder="Type the text" autocomplete="off"> <span id="recaptcha_privacy" class="recaptcha_only_if_privacy"><a href="http://www.google.com/intl/en/policies/" target="_blank">Privacy &amp; Terms</a></span> </div> </td> <td rowspan="4" class="recaptcha_r4_c2"></td> <td><a id="recaptcha_reload_btn" title="Get a new challenge"><img id="recaptcha_reload" width="25" height="17" src="http://www.google.com/recaptcha/api/img/white/refresh.gif" alt="Get a new challenge"></a></td> <td rowspan="4" class="recaptcha_r4_c4"></td> </tr> <tr> <td><a id="recaptcha_switch_audio_btn" class="recaptcha_only_if_image" title="Get an audio challenge"><img id="recaptcha_switch_audio" width="25" height="16" alt="Get an audio challenge" src="http://www.google.com/recaptcha/api/img/white/audio.gif"></a><a id="recaptcha_switch_img_btn" class="recaptcha_only_if_audio" title="Get a visual challenge"><img id="recaptcha_switch_img" width="25" height="16" alt="Get a visual challenge" src="http://www.google.com/recaptcha/api/img/white/text.gif"></a></td> </tr> <tr> <td><a id="recaptcha_whatsthis_btn" title="Help"><img id="recaptcha_whatsthis" width="25" height="16" src="http://www.google.com/recaptcha/api/img/white/help.gif" alt="Help"></a></td> </tr> <tr> <td class="recaptcha_r7_c1"></td> <td class="recaptcha_r8_c1"></td> </tr> </tbody></table> </div></div>
+								<noscript>
+									&lt;iframe src="//www.google.com/recaptcha/api/noscript?k=6LePQQkTAAAAALQykrmLLZU9-BQ1l5NWvA5Y3DNe" height="300" width="500" style="border:none;"&gt;&lt;/iframe&gt;&lt;br/&gt;
+									&lt;textarea name="recaptcha_challenge_field" rows="3" cols="40"&gt;&lt;/textarea&gt;
+									&lt;input type="hidden" name="recaptcha_response_field" value="manual_challenge"/&gt;</noscript> -->
+									<br>
+								</div>
+								<br>
+								<div class="buttonWrap">
+									<!-- /= link_to "Try Sample Questions", "#", class: 'btn btn-primary' -->
+									<div class="btnSignupWrap">
+										<input class="btn btn-default btn btn-primary" data-disable-with="Please wait.." id="primarySignupButton" name="commit" type="submit" value="Sign Up">
+										<img alt="Free label" src="/assets/free-label-e0ad13f3c4914621c87f00e426c4200a.png">
+									</div>
+								</div>
+								<p class="infoText">
+									By proceeding, you agree to the Fundamentor
+									<a data-target="#modalTermsAndConditionsParentSignUpForm" data-toggle="modal" href="#">Terms and conditions</a>
+									<br>
+									<br>
+									<a data-target="#modalLoginSignUpPage" data-toggle="modal" href="#" id="alreadySignupText">Already signed up?</a>
+								</p>
+							</form>
+
+						</div>
+					</div>
+				</div>
+				<!-- / Facebook Pixel Code -->
+				<!-- <noscript>
+					&lt;img alt='' height='1' src='https://www.facebook.com/tr?ev=6025955128046&amp;amp;amp;cd[value]=0.00&amp;amp;amp;cd[currency]=INR&amp;amp;amp;noscript=1' style='display:none' width='1'&gt;
+				</noscript> -->
+				<div class="modal fade" id="modalTermsAndConditionsParentSignUpForm" role="dialog" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal" type="button">
+									<span aria-hidden="true">×</span>
+									<span class="sr-only">Close</span>
+								</button>
+								<h4 class="modal-title">Terms Of Service</h4>
+							</div>
+							<div class="modal-body">
+								<p>
+									Thank you for using
+									<a href="http://www.fundamentor.com">www.fundamentor.com.</a>
+									www.fundamentor.com (“Fundamentor” )  is created by  Paratus Knowledge Ventures Pvt Ltd  (“Paratus” or “we”). These Terms of Service (“TOS”) govern the use of www.fundamentor.com
+								</p>
+								<p>
+									<b>These TOS represent a binding contract between you and Paratus, and by creating an account or otherwise accessing Fundamentor, you expressly agree to be bound by them</b>
+								</p>
+								<p>
+								</p><ol>
+								<li>
+									<p>
+										The term User shall refer to the user who is browsing the Site. The term Site refers to www.fundamentor.com . This site is owned and operated by Paratus.
+									</p>
+								</li>
+								<li>
+									<p>
+										By using the Site, you agree to follow and be bound by the following terms and conditions concerning your use of the Site. Paratus  may revise the Terms of Use at any time without notice to you.
+									</p>
+								</li>
+								<!-- %li -->
+								<!-- %p -->
+								<!-- %b The annual subscription for Fundamentor Program  is Rs 1800 per annum. -->
+								<li>
+									<p>
+										All content present on this site is the exclusive property of Paratus Knowledge Ventures Pvt Ltd. The software, text, images, graphics, video and audio used on this site belong to Paratus Knowledge Ventures Pvt Ltd . No material from this site may be copied, modified, reproduced, republished, uploaded, transmitted, posted or distributed in any form whatsoever without prior written permission from Paratus Knowledge Ventures Pvt Ltd. All rights not expressly granted herein are reserved. Unauthorized use of the materials appearing on this site may violate copyright, trademark and other applicable laws, and could result in criminal and/or civil penalties.
+									</p>
+								</li>
+								<li>
+									<p>
+										Paratus Knowledge Ventures Pvt Ltd does not accept any responsibility towards the contents and/or information practices of third party Sites which have links through Fundamentor Site. The said links to internal or external Website locations are only for the purpose of facilitating your visit or clarify your query.
+									</p>
+								</li>
+								<li>
+									<p>
+										The Site, and all content, materials, information, software, products and services provided on the Site, are provided on an “as is” and “as available” basis. Paratus Knowledge Ventures Pvt Ltd expressly disclaims all warranties of any kind, whether express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose and non-infringement.
+									</p>
+								</li>
+								<li>
+									<p>
+										Paratus shall have no responsibility for any damage to a User’s computer system or loss of data that results from the download of any content, materials, information from the Site.
+									</p>
+								</li>
+								<li>
+									<p>
+										<b>Refund Policy:</b>
+										Our policy lasts 7 days. If 7 days have gone by since your purchase, unfortunately we can’t offer you a refund. Once your request for refund is received and processed, we will send you an email to notify you that we have received your request for refund. We will also notify you of the approval or rejection of your refund. If your refund is approved, then your refund will be processed, and a credit will automatically be applied to your credit card or original method of payment, within a certain amount of days.
+									</p>
+								</li>
+								<li>
+									<p>
+										These terms and conditions in the end user agreement are governed in accordance with the laws of India.
+									</p>
+								</li>
+							</ol>
+							<p></p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="modalLoginSignUpPage" role="dialog" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" data-dismiss="modal" type="button">
+								<span aria-hidden="true">×</span>
+								<span class="sr-only">Close</span>
+							</button>
+							<h4 class="modal-title">Login</h4>
+						</div>
+						<div class="modal-body" id="custom-padding">
+							<div id="login_form">
+
+								<form accept-charset="UTF-8" action="/users/sign_in" class="simple_form new_user" id="new_user" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="cthJgGLhEUJdaVc+k37q8pGxrAK0fj1Rs2fAE/3xMGw="></div><div class="social-login-wrap">
+									<a href="/auth/facebook" id="underline">
+										<img alt="Parent signup 04" class="social-login" src="/assets/parent-signup-04-1acc35d5b3daa7d0a1993c0b2c857bc5.png">
+									</a>
+									<a href="/auth/google_oauth2" id="underline">
+										<img alt="Parent signup 03" class="social-login" src="/assets/parent-signup-03-9638a2b21ab08ff20ff4735531ceafdc.png">
+									</a>
+								</div>
+								<br>
+								<br>
+								<div class="form-group string required user_user_id"><input aria-required="true" autofocus="autofocus" class="string required form-control" id="user_user_id" name="user[user_id]" placeholder="User Name" required="required" type="text"></div>
+								<div class="form-group password required user_password"><input aria-required="true" class="password required form-control" id="user_password" name="user[password]" placeholder="Password" required="required" type="password"></div>
+								<div class="form-group boolean optional user_remember_me"><input name="user[remember_me]" type="hidden" value="0"><label><input class="boolean optional" id="user_remember_me" name="user[remember_me]" type="checkbox" value="1"> Remember me</label></div>
+								<input class="btn btn-default btn-primary" name="commit" type="submit" value="Log in">
+								<br>
+								<a href="/forgot-password">Forgot password?</a>
+								<br>
+								Don't have an account yet?
+								<br>
+								Sign up as
+								<a href="/users/sign_up?role=parent"> Parent</a>
+								or
+								<a href="/users/sign_up?role=student"> Student</a>
+							</form>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			jQuery(function($){
+				$.supersized({
+					slides  :  [ {image : "/assets/bg-signup-14572bd07cb1f7423a0e3ee337493c29.jpg" } ]
+				});
+			});
+		</script>
+
+	</div>
+
+	<div id="supersized" style="visibility: visible;">
+		<a class="activeSlide" target="_blank">
+			<img src="./images/bg-signup.jpg" style="visibility: visible; height: 850px; width: 1700px; left: -294px; top: 0px;">
+		</a>
+	</div>
+
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>
