@@ -1,0 +1,174 @@
+.parentSignupBody {
+    background: #FAA818;
+}
+
+.parentInside {
+    background: #001c22 url(./images/bg-quiz.jpg) center 0 no-repeat;
+    color: #ffffff;
+    padding-top: 44px;
+}
+
+.parentSignupWrap {
+    padding: 25px 0;
+    margin-left: 5%;
+}
+
+.wrapHeading#text {
+    color: #fff;
+}
+.parentSignupWrap .wrapHeading {
+    font-family: "robotoregular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 15px 15px 25px;
+    border: 3px solid;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.wrapHeading {
+    color: #404041;
+    padding-top: 50px;
+}
+
+
+.parentSignupWrap .wrapHeading .btn {
+    display: block;
+    margin: 20px auto 0;
+    width: 165px;
+}
+.btn-primary {
+    background-color: #FF7559;
+    border-color: #FF7559;
+    color: white;
+    padding: 6px;
+    text-transform: uppercase;
+}
+
+
+.parentSignupForm {
+    padding: 0 10px;
+    color: #FFFFFF;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.parentSignupForm .form-control {
+    background-color: #FFF;
+    border: 1px solid #6D6E70;
+    border-radius: 0;
+    min-height: 40px;
+    font-size: 16px;
+}
+
+.parentSignupForm label {
+    font-size: 16px;
+    line-height: 14px;
+    padding-right: 10px;
+    position: relative;
+    display: block;
+}
+
+.parentSignupForm .selectWrap {
+    position: relative;
+}
+
+.parent-signup-form label abbr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+    border: none;
+}
+
+.parentSignupForm .selectWrap .gradeSelectWrap {
+    background-color: #FFF;
+}
+
+
+.parentSignupForm .selectWrap .gradeSelectWrap select {
+    -webkit-appearance: none;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.parentSignupForm .selectWrap span {
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    font-size: 24px;
+    color: #58595B;
+}
+
+.parentSignupWrap .securityCheckWrap {
+    margin: 0 0 10px;
+}
+
+.parentSignupWrap .buttonWrap {
+    padding: 0;
+    text-align: center;
+}
+
+.parentSignupWrap .btnSignupWrap {
+    position: relative;
+    display: inline-block;
+}
+
+.parentSignupWrap .btnSignupWrap .btn {
+    position: relative;
+    z-index: 2;
+}
+.parentSignupWrap .buttonWrap .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin: 0 5px 10px;
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
+}
+
+.parentSignupWrap .infoText {
+    font-size: 14px;
+    padding: 0 10px;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+
+#supersized {
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: -999;
+    height: 100%;
+    width: 100%;
+}
+
+#supersized a {
+    z-index: -30;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    display: block;
+}
+
+#supersized img {
+    width: auto;
+    height: auto;
+    position: relative;
+    outline: none;
+    border: none;
+}
